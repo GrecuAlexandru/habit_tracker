@@ -1,0 +1,23 @@
+{
+  "name": "habit_tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrecuAlexandru/habit_tracker.git"
+  },
+  "author": "Alexandru Grecu & Valentin Chipuc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GrecuAlexandru/habit_tracker/issues"
+  },
+  "homepage": "https://github.com/GrecuAlexandru/habit_tracker#readme",
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
