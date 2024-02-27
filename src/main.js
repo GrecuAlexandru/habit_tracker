@@ -20,6 +20,9 @@ function createWindow() {
 		autoHideMenuBar: true
 	})
 
+	// Open the DevTools automatically
+	win.webContents.openDevTools();
+
 	win.loadFile(path.join(__dirname, 'index.html'))
 }
 
