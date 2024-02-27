@@ -2,7 +2,7 @@
   "name": "habit_tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "./src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/GrecuAlexandru/habit_tracker#readme",
   "devDependencies": {
     "electron": "^29.0.0"
+  },
+  "dependencies": {
+    "fs-jetpack": "^5.1.0"
   }
 }

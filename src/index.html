@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Tracker</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div id="topbar">
+            <button id="settings">
+                <img src="../resources/img/gear-solid.svg" width="30 rem" alt="settings" />
+            </button>
+            <h1>Habit Tracker</h1>
+            <button id="new">
+                <img src="../resources/img/plus-solid.svg" width="30 rem" alt="add" />
+                <div id="new_text">New</div>
+            </button>
+        </div>
+        <div id="app">
+            <div class="habit">
+                <div class="habit_info">
+                    <div class="habit_info">
+                        <div class="habit_name">Exercise</div>
+                        <div class="habit_streak">Streak: 5</div>
+                    </div>
+                    <div class="habit_grid">
+                        <div class="graph p-3 mt-3">
+                            <ul class="squares mt-3 ms-0 ps-0">
+                                <!-- added via javascript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main/app.js"></script>
+</body>
+
+</html>
