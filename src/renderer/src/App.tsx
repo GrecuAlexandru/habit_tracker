@@ -1,18 +1,17 @@
-import { Chip, Spinner } from '@nextui-org/react'
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import CreateHabit from './pages/CreateHabit';
 
-function App(): JSX.Element {
-  return (
-    <div className="p-4">
-      <h1 className="text-3xl font-extrabold text-blue-500">Zenith Boilerplate</h1>
-      <a href="https://github.com/arounte">
-        <h2 className="text-lg font-light text-blue-400 hover:text-pink-500">GitHub: @Arounte</h2>
-      </a>
-      <Spinner />
-      <Chip color="primary" variant="shadow" className="my-2">
-        NextUI works 🍻
-      </Chip>
-    </div>
-  )
+function App() {
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/create-habit" element={<CreateHabit />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
-export default App
+export default App;
